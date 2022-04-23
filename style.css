@@ -12,9 +12,9 @@ body {
 
 /* -----------------color------------------- */
 
- .purple {
+.purple {
   color: #9356dc;
-} 
+}
 .pink {
   color: #ff79da;
 }
@@ -33,7 +33,7 @@ body {
 
 /* ################## loader-spinner #######################*/
 
- .loader {
+.loader {
   position: fixed;
   display: grid;
   place-items: center;
@@ -47,19 +47,16 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
 }
- @keyframes loader-spinner { 
+@keyframes loader-spinner {
   0% {
     transform: scale(1);
   }
   100% {
     transform: scale(0);
   }
-} 
+}
 
-
-
-
-/* ########################################################*/
+/* ###################### loader-spinner ##################################*/
 
 .home-container {
   display: flex;
@@ -174,32 +171,31 @@ body {
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 5px 7px rgb(190, 190, 190);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .bloc-bubble-fonction:hover {
- transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: rgba(254, 219, 251, 0.829);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 5px 7px rgb(190, 190, 190);
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.bloc-bubble-fonction:hover .icon-bubble-mob{
-  color:#9356dc;
- }
-.bloc-bubble-fonction:hover .icon-bubble-point{
-  color:#9356dc;
- }
-.bloc-bubble-fonction:hover .icon-bubble-line{
-  color:#9356dc;
- }
-.bloc-bubble-fonction:hover .icon-bubble-store{
-  color:#9356dc;
- }
-
+.bloc-bubble-fonction:hover .icon-bubble-mob {
+  color: #9356dc;
+}
+.bloc-bubble-fonction:hover .icon-bubble-point {
+  color: #9356dc;
+}
+.bloc-bubble-fonction:hover .icon-bubble-line {
+  color: #9356dc;
+}
+.bloc-bubble-fonction:hover .icon-bubble-store {
+  color: #9356dc;
+}
 
 .circle-number {
   width: 22px;
@@ -229,7 +225,6 @@ body {
   font-weight: 500;
   transform: translate(6px, 4px);
 }
-
 
 .icon-bubble-mob {
   padding-left: 10px;
@@ -321,7 +316,7 @@ body {
 .img-rest1 {
   height: 300px;
   width: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   background-position: bottom;
   border-radius: 15px 15px 0 0;
 }
@@ -342,18 +337,17 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  
 }
 
 .bloc-heart:hover .full {
   position: absolute;
   font-size: 22px;
-  transition: all 400ms ease-in-out;  
+  transition: all 400ms ease-in-out;
   opacity: 1;
   animation: remplissage 0.5s;
 }
 
-@keyframes remplissage { 
+@keyframes remplissage {
   0% {
     transform: scale(0);
   }
@@ -366,18 +360,18 @@ body {
   position: absolute;
   font-size: 22px;
   opacity: 0;
-  transition: all 400ms ease-in-out;  
+  transition: all 400ms ease-in-out;
 }
 
 .empty {
   position: absolute;
-  font-size: 22px; 
+  font-size: 22px;
   opacity: 1;
 }
 
 .full {
   position: absolute;
-  opacity:0;
+  opacity: 0;
 }
 
 /* --------------------------------- animation remplissage coeur fin ---------------------------------- */
@@ -386,7 +380,7 @@ body {
 .container-footer {
   background-color: #363636;
   color: white;
-  padding-left:20px;
+  padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -419,17 +413,15 @@ body {
 }
 
 @media (max-width: 768px) {
-
-
   .container-select-restaurant {
     padding-left: 3%;
     padding-right: 3%;
   }
 
-  .img-rest1{
-  height: 225px;
-}
-  
+  .img-rest1 {
+    height: 225px;
+  }
+
   .fonction-grid-tab-desk {
     display: block;
   }
