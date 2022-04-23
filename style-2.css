@@ -5,6 +5,10 @@
   font-family: "Roboto", Arial, sans-serif;
 }
 
+header{
+  height:415px;
+}
+
 /* ################## color ################## */
 
 .purple {
