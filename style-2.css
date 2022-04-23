@@ -5,6 +5,10 @@
   font-family: "Roboto", Arial, sans-serif;
 }
 
+header{
+  height:415px;
+}
+
 /* ################## color ################## */
 
 .purple {
@@ -82,12 +86,12 @@
 .bloc-heart:hover .full {
   position: absolute;
   font-size: 22px;
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;  
   opacity: 1;
   animation: remplissage 0.5s;
 }
 
-@keyframes remplissage {
+@keyframes remplissage { 
   0% {
     transform: scale(0);
   }
@@ -252,11 +256,11 @@
   padding-bottom: 0px;
   overflow: hidden;
   white-space: nowrap; /*reste sur la même ligne*/
-  text-overflow: ellipsis; /*trois petits points */
+  text-overflow: ellipsis;/*trois petits points */
 }
 .precision {
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap; 
   text-overflow: ellipsis;
 }
 
@@ -390,17 +394,17 @@
   }
 
   .bloc-entrees {
-    padding-top: 10px;
+    padding-top:10px;
     width: 100%;
   }
 
   .bloc-plats {
-    padding-top: 30px;
+    padding-top:30px;
     width: 100%;
   }
 
   .bloc-desserts {
-    padding-top: 30px;
+    padding-top:30px;
     width: 100%;
   }
 }
