@@ -179,7 +179,7 @@ body {
 
 .bloc-bubble-fonction:hover {
  transition: all 0.5s ease-in-out;
-  background-color: rgb(255, 234, 253);
+  background-color: rgba(254, 219, 251, 0.829);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 20px;
