@@ -28,7 +28,8 @@ header{
   color: rgb(87, 87, 87);
 }
 
-/* ################## animation ######################## */
+/* ################## Animation  encoche validé rotation ######################## */
+
 @keyframes rotation-valid {
   0% {
     transform: rotate(-270deg);
@@ -42,17 +43,7 @@ header{
   animation: rotation-valid 0.5s ease-in-out;
   animation-delay: 100ms;
 }
-
-@keyframes appear {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+/* ################## Apparition progressive décalée des "bloc-meal"  ######################## */
 
 .bloc-meal {
   animation: appear 1.5s;
@@ -69,6 +60,18 @@ header{
 .delay-400 {
   animation-delay: 400ms;
 }
+
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* ######################### Animation coeur remplissage #################################### */
 
 .bloc-heart {
@@ -79,7 +82,6 @@ header{
   align-items: center;
   position: relative;
 }
-
 
 .bloc-heart:hover .full {
   position: absolute;
@@ -117,6 +119,8 @@ header{
   font-size: 22px;
   opacity: 0;
 }
+
+/* ######################### Fin:  Animation coeur remplissage #################################### */
 
 .bloc-entrees {
   display: flex;
@@ -214,7 +218,6 @@ header{
 }
 
 .title-menu {
-  /* padding-left: 5%; */
   padding-bottom: 5px;
 }
 
@@ -228,7 +231,6 @@ header{
   width: 42px;
   height: 3px;
   background-color: rgb(124, 221, 124);
-  /* margin-left: 5%; */
 }
 
 .bloc-meal {
@@ -240,8 +242,6 @@ header{
   border-radius: 15px;
   box-shadow: 0px 5px 7px rgb(190, 190, 190);
   overflow: hidden;
-  /* white-space: nowrap;/*reste sur la même ligne*/
-  /* text-overflow: ellipsis; */
 }
 
 .text-meal {
@@ -249,19 +249,18 @@ header{
   padding-top: 10px;
   padding-bottom: 10px;
   overflow: hidden;
-  white-space: nowrap; /*reste sur la même ligne*/
-  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .title-meal {
   padding-bottom: 0px;
   overflow: hidden;
   white-space: nowrap; /*reste sur la même ligne*/
-  text-overflow: ellipsis;
+  text-overflow: ellipsis;/*trois petits points */
 }
 .precision {
   overflow: hidden;
-  white-space: nowrap; /*reste sur la même ligne*/
+  white-space: nowrap; 
   text-overflow: ellipsis;
 }
 
@@ -333,7 +332,8 @@ header{
   transition: all 0.5s ease-in-out;
 }
 
-/* --------------------footer----------------- */
+/* ####################### Footer ####################### */
+
 .container-footer {
   background-color: #363636;
   color: white;
@@ -394,20 +394,17 @@ header{
   }
 
   .bloc-entrees {
-    display: flex;
-    flex-direction: column;
+    padding-top:10px;
     width: 100%;
   }
 
   .bloc-plats {
-    display: flex;
-    flex-direction: column;
+    padding-top:30px;
     width: 100%;
   }
 
   .bloc-desserts {
-    display: flex;
-    flex-direction: column;
+    padding-top:30px;
     width: 100%;
   }
 }
