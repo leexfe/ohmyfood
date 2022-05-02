@@ -299,6 +299,12 @@ body {
   border-radius: 15px;
   box-shadow: 0px 5px 7px rgb(190, 190, 190);
 }
+
+.card-restaurant:hover{
+  
+  transform: scale(1.01);
+  transition: 0.2s ease;
+}
 /* ----------------------------- étiquette nouveau ------------------------------------------- */
 .new-menu {
   position: relative;
