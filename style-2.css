@@ -110,7 +110,6 @@ header{
 .empty {
   position: absolute;
   font-size: 22px;
-  background-clip: text;
   opacity: 1;
 }
 
