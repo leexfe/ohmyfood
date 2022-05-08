@@ -5,9 +5,7 @@
   font-family: "Roboto", Arial, sans-serif;
 }
 
-header{
-  height:415px;
-}
+
 
 /* ################## color ################## */
 
@@ -75,6 +73,7 @@ header{
 /* ######################### Animation coeur remplissage #################################### */
 
 .bloc-heart {
+  
   padding-right: 40px;
   width: 40px;
   display: flex;
@@ -86,12 +85,12 @@ header{
 .bloc-heart:hover .full {
   position: absolute;
   font-size: 22px;
-  transition: all 400ms ease-in-out;  
+  transition: all 400ms ease-in-out;
   opacity: 1;
   animation: remplissage 0.5s;
 }
 
-@keyframes remplissage { 
+@keyframes remplissage {
   0% {
     transform: scale(0);
   }
@@ -142,7 +141,7 @@ header{
 .page-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  
 }
 
 .head-bar {
@@ -153,14 +152,14 @@ header{
   width: 100%;
 }
 
-header{
-  position: relative; 
+header {
+  position: relative;
 }
 
 .dispo-arrow {
   position: absolute;
-  top:37px;
-  left:20px;
+  top: 37px;
+  left: 20px;
   color: black;
   text-decoration: none;
 }
@@ -247,6 +246,7 @@ header{
   border-radius: 15px;
   box-shadow: 0px 5px 7px rgb(190, 190, 190);
   overflow: hidden;
+  max-width: 100%;
 }
 
 .text-meal {
@@ -261,11 +261,11 @@ header{
   padding-bottom: 0px;
   overflow: hidden;
   white-space: nowrap; /*reste sur la même ligne*/
-  text-overflow: ellipsis;/*trois petits points */
+  text-overflow: ellipsis; /*trois petits points */
 }
 .precision {
   overflow: hidden;
-  white-space: nowrap; 
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
@@ -383,6 +383,7 @@ header{
     padding-left: 5%;
     padding-top: 20px;
     padding-bottom: 25px;
+    max-width: 100%;
   }
 
   .menu-restaurant {
@@ -396,20 +397,21 @@ header{
 
   .title-restaurant {
     padding-left: 5%;
+    padding-right: 20px;
   }
 
   .bloc-entrees {
-    padding-top:10px;
+    padding-top: 10px;
     width: 100%;
   }
 
   .bloc-plats {
-    padding-top:30px;
+    padding-top: 30px;
     width: 100%;
   }
 
   .bloc-desserts {
-    padding-top:30px;
+    padding-top: 30px;
     width: 100%;
   }
 }
